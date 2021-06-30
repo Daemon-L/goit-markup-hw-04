@@ -202,8 +202,8 @@ p {
   border-width: 1px;
 }
 
-.heroes-button:hover,
-.heroes-button:focus {
+.heroes-section .heroes-button:hover,
+.heroes-section .heroes-button:focus {
   background-color: #188ce8;
 }
 
