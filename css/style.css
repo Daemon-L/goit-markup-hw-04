@@ -161,12 +161,12 @@ p {
 /* =========== HERO =========== */
 .heroes-section {
   background-color: var(--secondary-back-color);
-  background-image: 
-  linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-  url(../images/decoration/hero.jpg); 
- 
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/decoration/hero.jpg);
+
   background-position: center;
   background-size: cover;
   max-width: 1600px;
@@ -227,6 +227,11 @@ p {
 .advantag-list {
   display: flex;
   flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  outline: 1px solid red;
+  list-style: none;
 }
 
 .advantag-item {
@@ -238,22 +243,28 @@ p {
   margin-right: 0px;
 }
 
-.advantag-icon {
-  
-  background-color: #F5F4FA;
-  width: 270px;
+/* .advantag-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
   margin-bottom: 30px;
-
-  fill: #2a2a2a;
-  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
 }
-
-.advantag-icon-a {
-  /* display: block; */
-  width: 70px;
-  height: 70px;
+.icon-antenna::before {
+  background-image: url(../images/decoration/svg/antenna.svg);
 }
-
+.icon-clock::before {
+  background-image: url(../images/decoration/svg/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/decoration/svg/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/decoration/svg/astronaut.svg);
+} */
 
 /* =========== ENGAGE =========== */
 
@@ -326,16 +337,15 @@ p {
 
 .social-icons {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .social-icons-link {
   display: block;
- 
+
   border: 2px dashed #2a2a2a;
   border-radius: 50%;
 }
-
 
 /* =========== FOOTER =========== */
 
@@ -379,10 +389,8 @@ p {
   color: var(--primary-back-color);
   background-color: var(--accent-color);
 
-  box-shadow: 
-    0px 2px 2px 0 rgba(0, 0, 0, 0.12),
-    0px 1px 2px 0 rgba(0, 0, 0, 0.08),
-    0px 3px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0 rgba(0, 0, 0, 0.08), 0px 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* =========== WORKS =========== */
@@ -423,10 +431,6 @@ p {
 
 .shadow:hover,
 .shadow:focus {
-  box-shadow: 
-  1px 4px 6px 0 rgba(0, 0, 0, 0.16),
-  0 4px 4px 0 rgba(0, 0, 0, 0.06),
-  0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
-
-
