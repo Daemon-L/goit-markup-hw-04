@@ -238,6 +238,23 @@ p {
   margin-right: 0px;
 }
 
+.advantag-icon {
+  
+  background-color: #F5F4FA;
+  width: 270px;
+  margin-bottom: 30px;
+
+  fill: #2a2a2a;
+  
+}
+
+.advantag-icon-a {
+  /* display: block; */
+  width: 70px;
+  height: 70px;
+}
+
+
 /* =========== ENGAGE =========== */
 
 .engage-section {
@@ -273,6 +290,8 @@ p {
 
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-name {
@@ -281,6 +300,10 @@ p {
   color: #212121;
 
   margin-bottom: 10px;
+}
+
+.team-position {
+  margin-bottom: 16px;
 }
 
 .team-list {
@@ -300,6 +323,19 @@ p {
 .team-item:last-of-type {
   margin-right: 0px;
 }
+
+.social-icons {
+  display: flex;
+  justify-content:space-between;
+}
+
+.social-icons-link {
+  display: block;
+ 
+  border: 2px dashed #2a2a2a;
+  border-radius: 50%;
+}
+
 
 /* =========== FOOTER =========== */
 
