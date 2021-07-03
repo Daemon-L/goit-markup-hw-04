@@ -239,11 +239,8 @@ p {
 }
 
 .advantag-desc {
-  height: 75px;
+  line-height: 1.71;
 }
-/* Нада ли эта высота? 
-без нее не соответствие с макетом. 
-Но будет проблема с переполнением? */
 
 .advantag-list {
   display: flex;
@@ -492,10 +489,6 @@ fill не меняет цвет иконки
 
   margin-bottom: 20px;
 }
-
-/* .footer-social {
-  align-items: center;
-} */
 
 .footer-social-list {
   display: flex;
