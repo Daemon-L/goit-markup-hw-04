@@ -138,7 +138,7 @@ p {
 }
 
 .contacts-list {
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
   align-items: center;
 }
@@ -170,6 +170,15 @@ p {
 
 .links-heder:hover .icon-heder {
   fill: var(--accent-color);
+}
+
+.envelope {
+  width: 16px;
+  height: 12px;
+}
+.smartphone {
+  width: 10px;
+  height: 16px;
 }
 
 /* =========== HERO =========== */
