@@ -36,6 +36,7 @@ p {
   color: var(--secondary-font-collor);
   letter-spacing: 0.02em;
   line-height: 1.14;
+  font-style: normal;
 }
 
 .active-links,
@@ -133,13 +134,13 @@ p {
 
 .nav-list {
   display: flex;
-
   font-weight: 500;
 }
 
 .contacts-list {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .nav-item > .links,
@@ -155,7 +156,20 @@ p {
 }
 
 .links-heder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: var(--primary-font-color);
+}
+
+.icon-heder {
+  margin-right: 10px;
+  fill: var(--primary-font-color);
+}
+
+.links-heder:hover .icon-heder {
+  fill: var(--accent-color);
 }
 
 /* =========== HERO =========== */
@@ -311,15 +325,18 @@ p {
 
 .team-person {
   background-color: var(--primary-back-color);
-
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
+
+  border-radius: 0px 0px 4px 4px;
+  /* border-radius и тут и в team-item ???
+  скругления пропадают без одного из них  */
 }
 
 .team-name {
-  font-size: 16px; /* перебивает font-size от браузера */
+  font-size: 16px;
   font-weight: 500;
   color: #212121;
 
@@ -346,18 +363,83 @@ p {
   margin-right: 0px;
 }
 
-.social-icons {
+.social-list {
   display: flex;
   justify-content: space-between;
 }
 
-.social-icons-link:hover {
-  background-color: var(--accent-color);
-  display: block;
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* fill: var(--primary-back-color); */
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--primary-back-color);
+}
+/*??? Почему не вышло как на лекции ??? 
+fill не меняет цвет иконки
+*/
+/* .social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-back-color);
+} */
+
+/* ===========CLIENTS =========== */
+
+.clients-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+.clients-link:focus,
+.clients-link:hover {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
 }
 
 /* =========== FOOTER =========== */
@@ -365,9 +447,13 @@ p {
 .footer-section {
   background-color: var(--secondary-back-color);
   line-height: 1.71;
-
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-contacts-item:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
 }
 
 .links-footer {
@@ -378,8 +464,69 @@ p {
   color: var(--primary-back-color);
 }
 
-.footer-contacts:not(:last-child) {
-  margin-bottom: 9px;
+.footer-social-list {
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-social {
+  margin-left: 70px;
+  padding-top: 12px;
+  /* Пожалуй такой костыль, что капец
+  падинги плюсуются и я добавил нехватающие 
+  как этот блок разместить по другому?*/
+  padding-bottom: 40px;
+}
+
+.footer-title {
+  color: var(--primary-back-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  margin-bottom: 20px;
+}
+
+/* .footer-social {
+  align-items: center;
+} */
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-back-color);
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover {
+  background-color: var(--accent-color);
 }
 
 /* =========== PORTFOLIO =========== *
@@ -417,6 +564,7 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-font-collor);
+  font-size: 14px;
 
   margin-bottom: 4px;
 }
