@@ -143,6 +143,12 @@ p {
   align-items: center;
 }
 
+.contacts-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-item > .links,
 .contacts-item > .links {
   display: block;
