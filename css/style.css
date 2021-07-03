@@ -138,20 +138,20 @@ p {
 }
 
 .contacts-list {
-  display: inline-flex;
+  display: flex;
   margin-left: auto;
   align-items: center;
 }
 
-.contacts-item {
+.links-heder {
   display: flex;
-  justify-content: center;
   align-items: center;
+
+  color: var(--primary-font-color);
 }
 
 .nav-item > .links,
 .contacts-item > .links {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -159,14 +159,6 @@ p {
 .nav-item:not(:last-child),
 .contacts-item:not(:last-child) {
   margin-right: 50px;
-}
-
-.links-heder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: var(--primary-font-color);
 }
 
 .icon-heder {
